@@ -16,22 +16,27 @@
     <div class="container">
       <form method="get" action="thankyou.html">
         <label for="name">Name:</label><br />
-        <input type="text" id="name" name="name" /><br />
+        <input type="text" id="name" name="name" required="required" /><br />
 
         <label for="email">Email:</label><br />
-        <input type="email" id="eail" name="email" /><br />
+        <input type="email" id="eail" name="email" required="required" /><br />
 
         <label for="address">Address:</label><br />
-        <input type="text" id="address" name="address" /><br />
+        <input
+          type="text"
+          id="address"
+          name="address"
+          required="required"
+        /><br />
 
         <label for="city">City:</label><br />
-        <input type="text" id="city" name="city" /><br />
+        <input type="text" id="city" name="city" required="required" /><br />
 
         <label for="state">State:</label><br />
-        <input type="text" id="state" name="state" /><br />
+        <input type="text" id="state" name="state" required="required" /><br />
 
         <label for="zip">Zipcode:</label><br />
-        <input type="text" id="zip" name="zip" /><br />
+        <input type="number" id="zip" name="zip" required="required" /><br />
 
         <input class="submit" type="submit" value="Submit" />
       </form>

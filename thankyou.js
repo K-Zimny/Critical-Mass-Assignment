@@ -17,3 +17,19 @@ console.log(
   Zip: ${paramZip}
   `
 );
+
+// Get and replace html elements with url params
+
+const formName = document.querySelector(".name");
+const formEmail = document.querySelector(".email");
+const formAddress = document.querySelector(".address");
+const formCity = document.querySelector(".city");
+const formState = document.querySelector(".state");
+const formZip = document.querySelector(".zip");
+
+formName.innerHTML = paramName;
+formEmail.innerHTML = paramEmail;
+formAddress.innerHTML = paramAddress;
+formCity.innerHTML = paramCity;
+formState.innerHTML = paramState;
+formZip.innerHTML = paramZip;
