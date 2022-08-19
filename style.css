@@ -5,6 +5,8 @@
 :root {
   --primary-bg-color: rgb(252, 252, 252);
   --primary-color: rgb(9, 167, 151);
+
+  --primary-font: "Raleway", sans-serif;
 }
 
 /* ----------------------------------- */
@@ -94,10 +96,11 @@ select {
 
 body {
   background-color: var(--primary-bg-color);
+  font-family: var(--primary-font);
 }
 
 .container {
-  max-width: 1920px;
+  max-width: 1000px;
   width: 95%;
   margin-inline: auto;
 }
