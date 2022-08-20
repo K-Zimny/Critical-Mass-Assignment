@@ -136,6 +136,18 @@ label {
   margin-bottom: 0.5rem;
   text-decoration: underline;
   text-decoration-color: var(--primary-color);
+
+  position: relative;
+}
+
+label::after {
+  position: absolute;
+  content: "*";
+  color: red;
+}
+
+span.required {
+  color: red;
 }
 
 .submit {
@@ -147,6 +159,9 @@ label {
 
   display: block;
   margin-inline: auto;
+
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
 .form-submission {
