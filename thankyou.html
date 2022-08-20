@@ -17,11 +17,11 @@
   <body>
     <div class="heading-container">
       <div class="container">
-        <h1>Thank You!</h1>
+        <h1 data-aos="zoom-in-down">Thank You!</h1>
       </div>
     </div>
     <div class="container">
-      <div class="form-submission">
+      <div class="form-submission" data-aos="fade-up">
         <p>Your responses were:</p>
         <hr />
         <p>Name: <span class="name"></span></p>
@@ -32,5 +32,10 @@
         <p>Zipcode: <span class="zip"></span></p>
       </div>
     </div>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
