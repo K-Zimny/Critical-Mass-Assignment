@@ -164,6 +164,8 @@ span.required {
 
   text-transform: uppercase;
   font-weight: bold;
+
+  height: auto;
 }
 
 .form-submission {
