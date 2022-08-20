@@ -7,6 +7,7 @@
   --primary-color: rgb(9, 167, 151);
 
   --primary-font: "Raleway", sans-serif;
+  --primary-fs: 18px;
 }
 
 /* ----------------------------------- */
@@ -97,6 +98,7 @@ select {
 body {
   background-color: var(--primary-bg-color);
   font-family: var(--primary-font);
+  font-size: var(--primary-fs);
 }
 
 .container {
@@ -139,10 +141,20 @@ label {
 .submit {
   margin-top: 2rem;
   background-color: var(--primary-color);
+
+  width: 50%;
+  padding: 1rem;
+
+  display: block;
+  margin-inline: auto;
 }
 
 .form-submission {
-  text-align: center;
+  text-align: left;
+}
+
+.form-submission p {
+  margin-bottom: 1rem;
 }
 
 .form-submission span {
