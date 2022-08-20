@@ -7,16 +7,19 @@ const paramAddress = urlParams.get("address");
 const paramCity = urlParams.get("city");
 const paramState = urlParams.get("state");
 const paramZip = urlParams.get("zip");
-console.log(
-  `
-  Name: ${paramName}, 
-  Email: ${paramEmail}, 
-  Address: ${paramAddress}, 
-  City: ${paramCity}, 
-  State: ${paramState}, 
-  Zip: ${paramZip}
-  `
-);
+
+//json object of the form data to the console
+const formData = {
+  name: paramName,
+  email: paramEmail,
+  address: paramAddress,
+  city: paramCity,
+  state: paramState,
+  zip: paramZip,
+};
+
+const formDataJson = JSON.stringify(formData);
+console.log(formDataJson);
 
 // Get and replace html elements with url params
 
